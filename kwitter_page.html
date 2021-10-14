@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Message page</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-image: linear-gradient( 109.6deg,  rgba(253,199,141,1) 11.3%, rgba(249,143,253,1) 100% );">
+
+<div class="container">
+	<button id="logout" onclick="logout()" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+	<center>
+		<h1 class="header">	
+			Chat Box	
+			<sup>
+				<img src="icon1.jpg">
+			</sup>
+		</h1>
+		<div style="text-align: left;margin-bottom: 70px;" id="output"> </div>
+	</center>
+</div>
+
+<center>
+    <center>
+	<div class="input_div_message_page">
+        <center>
+		<label>Send:</label>
+		<input type="text" id="msg" class="form-control" placeholder="Message">
+		<button class="button1" onclick="send()">Send</button>
+    </center>
+</center>
+    </div>
+</center>
+
+<script src="kwitter_page.js"></script>
+</body>
+</html>
